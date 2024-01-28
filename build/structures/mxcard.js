@@ -84,7 +84,7 @@ class mxcard {
         if (!this.color) this.setColor('ff0000');
         if (!this.theme) this.setTheme('classic');
         if (!this.brightness) this.setBrightness(0);
-        if (!this.thumbnail) this.setThumbnail('https://raw.githubusercontent.com/fakeerrorx-Radio/cdn/main/mxcard/default-thumbnail.png');
+        if (!this.thumbnail) this.setThumbnail('https://raw.githubusercontent.com/FakeErrorX/mxcard/main/cdn/mxcard/default-thumbnail.png');
         if (!this.progress) this.setProgress(0);
         if (!this.starttime) this.setStartTime('0:00');
         if (!this.endtime) this.setEndTime('0:00');
@@ -225,9 +225,9 @@ class mxcard {
                 // Mengatasi kesalahan ketika gambar tidak dapat dimuat
                 console.error('MUSICARD: Thumbnail image failed to load, not supported');
                 if (!this.thumbnail) {
-                    this.setThumbnail('https://raw.githubusercontent.com/fakeerrorx/cdn/main/mxcard/default-thumbnail.png');
+                    this.setThumbnail('https://raw.githubusercontent.com/FakeErrorX/mxcard/main/cdn/mxcard/default-thumbnail.png');
                 }
-                thumbnailImage = await canvas.loadImage(`https://raw.githubusercontent.com/fakeerrorx/cdn/main/mxcard/default-thumbnail.png`); // Gunakan gambar default atau URL alternatif
+                thumbnailImage = await canvas.loadImage(`https://raw.githubusercontent.com/FakeErrorX/mxcard/main/cdn/mxcard/default-thumbnail.png`); // Gunakan gambar default atau URL alternatif
             }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
